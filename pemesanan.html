@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentalMobil RifaldiAzhar</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Handjet:wght@200;300;400;500;600&family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&family=Rubik+Distressed&family=Yellowtail&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Handjet:wght@200;300;400;500;600&family=Inter:wght@100;200;300;400;500;600;700&family=Kenia&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&family=Rubik+Distressed&family=Yellowtail&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="modal" id="modal">
+    <form id="form-rental-edit">
+      <div class="biodata-edit">
+        <label for="nama-edit">Nama
+        </label>
+        <input type="text" placeholder="Masukan Nama" id="nama-edit" name="nama">
+        <label for="alamat-edit">Alamat
+
+        </label>
+
+        <input type="text" placeholder="Masukan Alamat" name="alamat-edit" id="alamat-edit">
+      </div>
+      <div class="options-edit">
+        <h3> Pilih Jenis kelamin </h3>
+        <div>
+          <label for="pria">Pria
+            <input type="radio" value="Pria" id="pria-edit" name="gender-edit">
+          </label>
+          <label for="perempuan">Perempuan
+            <input type="radio" value="Perempuan" id="perempuan-edit" name="gender-edit">
+          </label>
+        </div>
+      </div>
+      <div class="car-container-edit">
+        <label class="select-car">Pilih Mobil
+          <select name="car-edit" id="car-edit">
+            <option value="avansa2018" class="optionsSelect">avansa 2018</option>
+            <option value="xenia2016" class="optionsSelect">xenia 2016</option>
+            <option value="brio2021" class="optionsSelect">Brio 2021</option>
+            <option value="kizin2020" class="optionsSelect">Kijang innova 2020</option>
+            <option value="apv2019" class="optionsSelect">Apv 2019</option>
+            <option value="hrv2020" class="optionsSelect">Hrv 2020</option>
+          </select>
+        </label>
+        <label for="" class="select-car">
+          durasi
+          <select name="durasi-edit" id="durasi-edit">
+            <option value="1 hari" class="selectDurasi">1 hari</option>
+            <option value="1 minggu" class="selectDurasi">1 minggu</option>
+            <option value="1 bulan" class="selectDurasi">1 bulan</option>
+          </select>
+        </label>
+
+        <img src="asset/BMW e36.jpg" alt="" id="car-img-edit" width="150" height="100">
+      </div>
+      <div class="editBTN">
+        <button id="edit">Edit</button>
+        <button id="batal">Batal</button>
+      </div>
+    </form>
+  </div>
+
+
+  <main>
+    <div class="title">
+      <h1>RentMo RifaldiAzhar</h1>
+    </div>
+
+    <section class="section-form">
+
+      <form id="form-rental">
+
+        <div class="container">
+          <div class="biodata">
+            <label>Nama
+              <input type="text" placeholder="Masukan Nama" id="nama" name="nama">
+            </label>
+            <label>Alamat
+              <input type="text" placeholder="Masukan Alamat" name="alamat" id="alamat">
+            </label>
+          </div>
+          <div class="options">
+            <h3> Pilih Jenis kelamin </h3>
+            <div>
+              <label for="pria">Pria
+                <input type="radio" value="Pria" id="pria" name="gender">
+              </label>
+              <label for="perempuan">Perempuan
+                <input type="radio" value="Perempuan" id="perempuan" name="gender">
+              </label>
+            </div>
+          </div>
+          <div class="car-container">
+            <label class="select-car">Pilih Mobil
+              <select name="car" id="car">
+                <option value="avansa2018">avansa2018</option>
+                <option value="xenia2016">xenia2016</option>
+                <option value="brio2021">brio2021</option>
+                <option value="kizin2020">kijang innova</option>
+                <option value="apv2019">apv2019</option>
+                <option value="hrv2020">hrv2020</option>
+              </select>
+            </label>
+            <label for="waktu">Tanggal penyewaan
+              <input type="date" value="waktu" id="waktu" name="waktu">
+            </label>
+            <label for="" class="select-car">Durasi
+              <select name="durasi" id="durasi">
+                <option value="1 hari">1 hari</option>
+                <option value="1 minggu">1 minggu</option>
+                <option value="1 bulan">1 bulan</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="images/avansa2018.jpg" alt="" id="car-img" width="150" height="100">
+          <h3 style="text-align: center;">Total Harga: <span id="harga">500000</span></h3>
+
+          <input type="submit" value="submit" id="submit">
+
+        </div>
+
+      </form>
+      <a href="index.html" style="justify-content: right ;"><button>kembali</button></a>
+
+    </section>
+
+    <div class="filtering">
+      <div class="filter-gender">
+        <label for=""> Filter By Gender
+          <select name="fliter-by-gender" id="filterGender">
+            <option value="all" selected>Semua Gender</option>
+            <option value="Pria">Pria</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+        </label>
+      </div>
+      <div class="searchName">
+        <input type="text" id="searchName" placeholder="Cari Nama">
+      </div>
+    </div>
+
+    <div class="user-container" id="user-container">
+
+
+    </div>
+  </main>
+
+  <script src="script2.js"></script>
+</body>
+
+</html>
