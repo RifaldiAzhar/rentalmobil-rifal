@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #fff;
+  font-family: "Robot", "Opens Sans", sans-serif;
+}
+
+main {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: aqua;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+
+
+.title {
+  width: 40%;
+  background-color: black;
+  margin: auto;
+  border-radius: 5px;
+}
+
+main h1 {
+  text-align: center;
+  font-family: "Kenia", "Roboto", sans-serif;
+  margin-bottom: 30px;
+  background-image: url(images/logo.jpg);
+}
+
+.section-form {
+  width: 100%;
+
+}
+
+.biodata {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.biodata label:nth-child(1) input {
+  margin-left: 21.5px;
+}
+
+#form-rental {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.container {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.img-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container img {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 20px auto;
+  border: 2px solid gray;
+}
+
+.img-container input {
+  width: 70%;
+  padding: 5px;
+  outline: none;
+  margin: 10px auto;
+  border: 3px solid greenyellow;
+  background-color: #fff;
+  font-size: 1rem;
+  transition: .3s ease-out;
+}
+
+.img-container input:hover {
+  background-color: greenyellow;
+  color: #fff;
+}
+
+input[type="text"] {
+  width: 70%;
+  height: 20px;
+  padding: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: gainsboro;
+}
+
+input[type="text"]:focus {
+  border: 3px solid rgb(0, 162, 255);
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.options h3 {
+  margin-top: 30px;
+}
+
+.options div {
+  margin-top: 10px;
+}
+
+.options div label {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.car-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.filtering {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.filtering .searchName {
+  width: 60%;
+}
+
+.filtering input[type="text"] {
+  background-color: #fff;
+  border: 1px solid black;
+  margin-left: 0;
+}
+
+.select-car {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.select-car #car {
+  margin-left: 2px;
+  width: 100%;
+  outline: none;
+  padding: 5px;
+}
+
+#durasi {
+  margin-left: 5px;
+  width: 100%;
+  padding: 5px;
+}
+
+
+.user-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 20px;
+}
+
+.user-container .card {
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 5px;
+  transition: .3s ease-in-out;
+}
+
+.user-container .card img {
+  width: 100%;
+}
+
+.user-container .card .data-penyewa {
+  padding: 10px;
+  font-size: .8rem;
+}
+
+.user-container .card .data-penyewa p span {
+  font-weight: bold;
+}
+
+.user-container .card .action {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+}
+
+.action {
+  gap: 5px;
+}
+
+.action button {
+  width: 50%;
+  margin: auto;
+  padding: 5px;
+  outline: none;
+  box-sizing: border-box;
+  transition: .2s ease-out;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.action button:nth-child(1) {
+  border: 3px solid greenyellow;
+
+}
+
+.action button:nth-child(2) {
+  border: 3px solid red;
+}
+
+.action button:nth-child(1):hover {
+  background-color: greenyellow;
+  color: white;
+}
+
+.action button:nth-child(2):hover {
+  background-color: red;
+  color: white;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#form-rental-edit {
+  width: 50%;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  padding: 30px;
+}
+
+.biodata-edit {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.biodata-edit input[type="text"] {
+  width: 100%;
+}
+
+.options-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.car-container-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-container-edit select {
+  width: 100%;
+}
+
+#car-img-edit {
+  width: 200px;
+}
+
+#durasi-edit {
+  margin-left: 5px;
+}
+
+.editBTN {
+  display: flex;
+  margin: 10px;
+}
+
+.editBTN button {
+  width: 50%;
+  margin: 5px;
+  border: none;
+  padding: 10px;
+}
+
+.none {
+  display: none;
+}
+
+@media(max-width:750px) {
+  .title {
+    width: 100%;
+  }
+
+  .section-form {
+    height: 650px;
+  }
+
+  #form-rental {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .img-container {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .img-container img {
+    width: 100%;
+    height: 200px;
+
+  }
+
+
+  #form-rental-edit {
+    width: 70%;
+
+  }
+
+  #form-rental-edit input[type="text"] {
+    width: 100%;
+
+  }
+
+  .filtering .searchName {
+    width: 100%;
+  }
+
+  .filtering input[type="text"] {
+    width: 100%;
+  }
+}
