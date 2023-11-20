@@ -93,15 +93,15 @@ window.addEventListener('load', () => {
 
     const car = document.getElementById('car').value
     const waktu = document.getElementById('waktu').value
-    const durasiWaktu = document.getElementById('durasi').value
+
     let insertData = {
       id: new Date(),
       nama: nama,
       alamat: alamat,
       gender: e.target.elements.gender.value,
       car: car,
-      waktu: waktu,
-      durasi: durasiWaktu
+      waktu: waktu
+
     }
 
     sewa.push(insertData)
@@ -180,7 +180,7 @@ function displayData() {
 
     <p><span>Jenis</span>: ${item.car}</p>
     <p><span>TanggalSewa</span>: ${item.waktu}</p>
-    <p><span>Durasi</span>: ${item.durasi}</p>
+   
     `
     dataPenyewa.innerHTML += biodata;
     card.innerHTML += inputId
@@ -209,8 +209,7 @@ function displayData() {
       const optionSelect = document.querySelectorAll('.optionsSelect')
       const waktu = document.getElementById('waktu-edit')
       const waktuSelect = document.querySelectorAll('.selectwaktu')
-      const durasi = document.getElementById('durasi-edit')
-      const durasiSelect = document.querySelectorAll('.selectDurasi')
+      
       editCar.addEventListener('change', pilihMobilEdit)
       for (let i = 0; i < optionSelect.length; i++) {
         optionSelect[i].id = `data-id-${i}`
@@ -265,7 +264,7 @@ function displayData() {
         sewa[index].alamat = alamatEdit.value
         sewa[index].car = editCar.value
         sewa[index].waktu = waktu.value
-        sewa[index].durasi = durasi.value
+     
         if (genderPria.checked) {
           sewa[index].gender = "Pria"
         } else {
